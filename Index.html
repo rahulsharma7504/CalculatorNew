@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <input type="text" id="text">
+
+        <table>
+            <tr>
+                <td><button onclick="text.value+='('">(</button></td>
+                <td><button onclick="text.value+=')'">)</button></td>
+                <td><button id="'on" onclick="helo()">C</button></td>
+                <td><button id='blue' onclick="text.value+='%'">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="text.value+='7'">7</button></td>
+                <td><button onclick="text.value+='8'">8</button></td>
+                <td><button onclick="text.value+='9'">9</button></td>
+                <td><button id="blue" onclick="text.value+='+'">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="text.value+='4'">4</button></td>
+                <td><button onclick="text.value+='5'">5</button></td>
+                <td><button onclick="text.value+='6'">6</button></td>
+                <td><button id="blue" onclick="text.value+='-'">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="text.value+='1'">1</button></td>
+                <td><button onclick="text.value+='2'">2</button></td>
+                <td><button onclick="text.value+='3'">3</button></td>
+                <td><button id="blue" onclick="text.value+='*'">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="text.value+='.'">.</button></td>
+                <td><button onclick="text.value+='0'">0</button></td>
+                <td><button id="target">=</button></td>
+                <td><button id="blue" type="button" value="/" onclick="text.value+='/'">/</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
